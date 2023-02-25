@@ -1,0 +1,23 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LDA 4500
+MOV B,A
+LDA 4502
+MVI C,00H
+ADD B
+DAA
+JNC L1
+INR C
+L1: STA 4506
+MOV A,C
+STA 4507
+
+hlt

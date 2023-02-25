@@ -1,0 +1,27 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+
+;code
+start: nop
+LXI H,1000H;IT TAKES THE INPPUT COUNT NEXT LOCATION 1001 WILL BE THE KEY ELEMENTS
+MOV C,M
+INX H
+MOV A,M
+INX H
+REP: CMP M
+JZ EQ
+INX H
+DCR C
+JNZ REP
+MVI A,00H
+JMP NULL
+EQ: MVI A,0FFH
+NULL: STA 1009H
+
+hlt

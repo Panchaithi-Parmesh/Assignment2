@@ -1,0 +1,25 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI E,00H
+LHLD 8500H
+MOV C,L
+MOV B,H
+LHLD 8600H
+DAD B
+JNC LOOP1
+INR E
+LOOP1: SHLD 4200H
+MOV A,E
+STA 4205H
+
+                       
+
+hlt

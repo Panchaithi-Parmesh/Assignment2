@@ -1,0 +1,125 @@
+HTML – Styles Using CSS in HTML
+Below mentioned style attributes to apply CSS in any HTML page
+A: HTML Background Color
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: coral;
+}
+</style>
+</head>
+<body>
+<h1>This is first web site and <b> we are learning </b></h1>
+</body>
+</html>
+
+
+
+B: HTML Text Color
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: coral;
+}
+</style>
+</head>
+<body>
+<h1 style="color:black;">This is a heading</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+C: HTML Fonts
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: coral;
+}
+</style>
+</head>
+<body>
+<h1 style="font-family:arial;">This is a heading</h1>
+</body>
+</html>
+
+
+D: HTML Text Size
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: coral;
+}
+</style>
+</head>
+<body>
+<h1 style="font-size:15px;">This is a heading</h1>
+</body>
+</html>
+
+
+
+
+
+E: HTML Text Alignment
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: coral;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align:right;">right heading</h1>
+</body>
+</html>
+
+F: HTML IFrames
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe src="http://specify any website " height="400" width="500"></iframe>
+
+</body>
+</html>
+
+
+G: HTML  Forms
+
+<html>
+<head></head>
+<body>
+<form>
+  User Name: <input type="text" name="username" value="Enter your Name" ><br>
+  Mobile:  <input type="text" name="mobile">
+</form>
+</body>
+</html>
+
+
+
+H: HTML Frame
+<!DOCTYPE html>
+<html>
+<frameset cols="25%,50%,25%">
+<frame src="page1.htm">
+<frame src="page2.htm">
+<frame src="page3.htm">
+</frameset>
+</html>
+

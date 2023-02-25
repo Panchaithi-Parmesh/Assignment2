@@ -1,0 +1,29 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI C,00H
+LXI H,8000H
+MOV A,M
+CMA                                           
+ADI 01H
+JNC LOOP1
+INR B
+LOOP1: STA 8005H
+INX H
+MOV A,M
+CMA
+ADD B
+JNC LOOP2
+INR C
+LOOP2: STA 8006H
+MOV A,C
+STA 8075H
+
+hlt

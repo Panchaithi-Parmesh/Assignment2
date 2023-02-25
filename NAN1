@@ -1,0 +1,21 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LXI H,8100H
+LXI B,4000H
+LOOP : MOV A,M
+STAX B
+INX H
+INX B
+DCRD
+JNZ LOOP
+
+
+hlt

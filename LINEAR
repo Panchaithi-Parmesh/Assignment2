@@ -1,0 +1,27 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LXI H,0100H
+MOV C,M
+INX H
+MOV A,M
+INX H
+REP: CMP M
+JZ EQ
+INX H
+DCR C
+JNZ REP
+MVI A,00H
+JMP NULL
+EQ: MVI A,0FFH
+NULL: STA 0110H
+
+
+hlt

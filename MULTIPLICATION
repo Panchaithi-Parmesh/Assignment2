@@ -1,0 +1,25 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+MVI C,02
+MVI D,03
+XRA A
+MOV B,A
+LOOP: ADD C
+DAA
+JNC NEXT
+INR B
+NEXT: DCR D
+JNZ LOOP
+STA 8600H
+MOV A,B
+STA 8601H
+hlt

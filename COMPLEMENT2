@@ -1,0 +1,20 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LXI H,8500H
+MOV A,M
+CMA
+STA 8502H
+INX H
+MOV A,M
+CMA
+STA 8503H
+
+hlt
